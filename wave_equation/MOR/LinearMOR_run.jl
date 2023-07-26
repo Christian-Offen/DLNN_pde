@@ -46,6 +46,15 @@ data_red = MOR_basis'*data_training_ROM';
 
 training_data_red=(x-> MOR_basis'*x').(training_data);
 
+# absolute reconstruction error || A-MOR_basis*MOR_basis'*A ||
+print("absolute reconstruction error (spectral/Frobenius): "*string(SVD_data.S[MOR_dim+1])*", "*string(sqrt(sum(SVD_data.S[MOR_dim+1:end].^2)))*"\n")   # spectral / Frobenius  (equates opnorm(reconst_error,2), norm(reconst_error,2))
+
+# relative projection error
+data_reconstr = MOR_basis*data_red
+reconst_error=data_training_ROM' - data_reconstr
+reconstr_error_average = sum( sqrt.(sum(reconst_error.^2,dims=1)./sum((data_training_ROM').^2,dims=1))) /size(data_training_ROM,1)
+print("relative reconstruction error (average): "*string(reconstr_error_average)*"\n")
+
 triple_collect = [training_data_red[k][:,j:j+2] for j=1:N-1 for k=1:length(training_data_red)]; # data triples
 
 # batch training_data
