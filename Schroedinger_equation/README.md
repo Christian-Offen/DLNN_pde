@@ -9,10 +9,11 @@ Accompanying source code for the article
 <a href="https://arxiv.org/abs/2308.05082">Preprint arXiv:2308.05082</a><br>
 <a href="https://arxiv.org/a/offen_c_1.html">ArXiv author page</a>
 
-# Description of files corresponding to the Schrödinger equation experiment
+# Files for Schrödinger equation experiment
+A neural network model of a discrete Lagrangian density is trained on data of a discrete Schrödinger equation.
 
 ## Evaluation_Trained_Model.ipynb
-Jupyter notebook containing numerical experiments with a machine learned discrete density on data of the discrete Schrödinger equation.
+Jupyter notebook containing numerical experiments with the trained model. 
 
 ## FitDensity_Schroedinger.jl
 Produces training data and trains a randomly initialised neural network model. 
