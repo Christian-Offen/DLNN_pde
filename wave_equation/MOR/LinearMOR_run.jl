@@ -145,6 +145,6 @@ end
 train_batchedROM!, save_paramsROM, save_TrainingDataROM = TrainingFunctions(lossesROM,lossROM_gradient,ADAM());
 
 ## Uncomment to train the model
-train_batchedROM!(train_loaderROM,paramsVecROM,100000; print_every=1, save_every=10)
+train_batchedROM!(train_loaderROM,paramsVecROM,100000; print_every=1, save_every=10) # gets aborted by timeout
 
 
