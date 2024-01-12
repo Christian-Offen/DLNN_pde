@@ -3,8 +3,9 @@ Accompanying source code for the article
 
 	Christian Offen, Sina Ober-Blöbaum
 	Learning of discrete models of variational PDEs from data
-	Status: Preprint (arXiv:2308.05082)
-	
+	Chaos 34 (1), 013104 (2024)
+	DOI: <a href="https://doi.org/10.1063/5.0172287">10.1063/5.0172287</a>
+ 
 	
 <a href="https://arxiv.org/abs/2308.05082">Preprint arXiv:2308.05082</a><br>
 <a href="https://arxiv.org/a/offen_c_1.html">ArXiv author page</a>
